@@ -45,8 +45,8 @@
 
 
 
-var convertTime = function(current, correct) {
+// var convertTime = function(current, correct) {
     
-};
+// };
 
-console.log(convertTime("02:30","04:35"))
+// console.log(convertTime("02:30","04:35"))
