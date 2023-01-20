@@ -44,9 +44,32 @@
 // console.log(findDifference([-73],[-66,9,-54,-32,94,11]))
 
 
+var findClosestNumber = function(nums) {
+    if(nums.includes(0)) return 0
+    if(nums.length === 1) return nums[0] 
+    let minus = []
+    let pilus = []
+   for(let item of nums){
+    if(item < 0) minus.push(item)
+    if(item > 0) pilus.push(item)
+   }
 
-// var convertTime = function(current, correct) {
-    
-// };
+   if(minus != [] && pilus !=[]){
+       pilus = Math.min(...pilus);
+       minus = Math.max(...minus);
+       if(Math.abs(minus) === pilus) return pilus
+       if(Math.abs(minus)>pilus) return pilus
+       if(Math.abs(minus)<pilus) return minus
+   }
+   if(pilus == [] && minus !=[]){
+    minus = Math.max(...minus)
+    return minus
+   }
+   if(minus == [] && pilus !=[]){
+     pilus = Math.max(...pilus)
+     return pilus
+   }
 
-// console.log(convertTime("02:30","04:35"))
+};
+
+console.log(findClosestNumber([-4,-2,1,4,8]))
