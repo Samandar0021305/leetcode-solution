@@ -181,10 +181,42 @@
 
 // console.log(digitCount("030"))
 
+// var countAsterisks = function(s) {
+//     let green=true, count=0;
+//       for(let i=0; i<s.length; i++){
+//           if(green && s[i]=="*"){count++};
+//           if(s[i]=="|"){green=!green};
+//       }
+//       return count;  
+//   };
 
-var rearrangeCharacters = function(s, target) {
+
+// var canBeTypedWords = function(text, brokenLetters) {
+//     text = text.split(" ")
+//     brokenLetters = brokenLetters.split("")
+//     let a = 0
+//     function Current(arr,item){
+//         let n = arr.length >= item.length ? arr.length : item.length
+//       for(let i=0;i< n;i++){
+//         if(arr.includes(item[i]) ) return false
+//       }
+
+//       return true
+//     }
+//     for(let item of text){
+//         if(Current(item,brokenLetters) == true){
+//            a++
+//         }
+//     }
+//     return a
+    
+// };
+
+// console.log(canBeTypedWords("leet code","e"))
+
+
+var areOccurrencesEqual = function(s) {
     
 };
 
-
-console.log()
+console.log(areOccurrencesEqual("aaabb"));
