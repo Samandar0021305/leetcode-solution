@@ -44,32 +44,147 @@
 // console.log(findDifference([-73],[-66,9,-54,-32,94,11]))
 
 
-var findClosestNumber = function(nums) {
-    if(nums.includes(0)) return 0
-    if(nums.length === 1) return nums[0] 
-    let minus = []
-    let pilus = []
-   for(let item of nums){
-    if(item < 0) minus.push(item)
-    if(item > 0) pilus.push(item)
-   }
+// var findClosestNumber = function(nums) {
+//     if(nums.includes(0)) return 0
+//     if(nums.length === 1) return nums[0] 
+//     let minus = []
+//     let pilus = []
+//    for(let item of nums){
+//     if(item < 0) minus.push(item)
+//     if(item > 0) pilus.push(item)
+//    }
 
-   if(minus != [] && pilus !=[]){
-       pilus = Math.min(...pilus);
-       minus = Math.max(...minus);
-       if(Math.abs(minus) === pilus) return pilus
-       if(Math.abs(minus)>pilus) return pilus
-       if(Math.abs(minus)<pilus) return minus
-   }
-   if(pilus == [] && minus !=[]){
-    minus = Math.max(...minus)
-    return minus
-   }
-   if(minus == [] && pilus !=[]){
-     pilus = Math.max(...pilus)
-     return pilus
-   }
+//    if(minus != [] && pilus !=[]){
+//        pilus = Math.min(...pilus);
+//        minus = Math.max(...minus);
+//        if(Math.abs(minus) === pilus) return pilus
+//        if(Math.abs(minus)>pilus) return pilus
+//        if(Math.abs(minus)<pilus) return minus
+//    }
+//    if(pilus == [] && minus !=[]){
+//     minus = Math.max(...minus)
+//     return minus
+//    }
+//    if(minus == [] && pilus !=[]){
+//      pilus = Math.max(...pilus)
+//      return pilus
+//    }
 
+// };
+
+// console.log(findClosestNumber([-4,-2,1,4,8]))
+
+
+// var intersection = function(nums) {
+//     let a = [];
+
+//     for (let i = 0; i < nums[0].length; i++) {
+//       if (nums.every((x) => x.includes(nums[0][i]))) {
+//         a.push(nums[0][i]);
+//       }
+//     }
+  
+//     return a.sort((a, b) => a - b);
+// };
+
+// console.log(intersection([[3,1,2,4,5],[1,2,3,4],[3,4,5,6]]))
+
+
+// var removeDigit = function(number, digit) {
+//   number = number.split("")  
+//   let arr = []
+//   for(let item =0;item<number.length;item++){
+//     if(number[item] == digit){
+//         digit = undefined
+//  continue
+// } 
+// if(number[item] != digit){
+//     arr.push(number[item])
+// }
+//   }
+//   return arr.join("")
+// };
+
+// console.log(removeDigit())
+
+
+// var percentageLetter = function(s, letter) {
+//   let a = 0;
+//   for(let i=0;i<s.length;i++){
+//     if(s[i] == letter){
+//         a = a + 1
+//     }
+//   }
+
+//   return Math.round(a / s.length * 100)
+
+// };
+
+// console.log(percentageLetter("foobar","o"))
+
+// var divide = function(dividend, divisor) {
+//     let a = 0
+//     let start = Math.abs(dividend)
+//     let end = Math.abs(divisor)
+//    while(start >= end){
+//     start -= end
+//     a= a + 1
+//    }
+
+//    return a
+// };
+
+// console.log(divide(-2147483648,-1))
+
+// var greatestLetter = function(s) {
+//     let strArr =[]
+//     for(let i=0;i<s.length;i++){
+//         for(let j=0;j<s.length;j++){
+//             if(s[i] == s[j].toUpperCase() && s[i].toLowerCase() == s[j] && i!=j){
+//                 strArr.push(s[i])
+//             }
+//         }
+//     }
+
+//     if(strArr.length ===0) return ""
+//     let sorted = strArr.sort()
+//     return sorted[sorted.length-1]
+    
+// };
+// console.log(greatestLetter("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"))
+
+
+
+// var digitCount = function(num) {
+//     function str(cr,i){
+//        let a = 0;
+//        for(let j=0;j<cr.length;j++){
+//         if(cr[j] == i) {
+//             a = a+1
+//         }
+//        }
+//        return a
+//     }
+//     let arr = num.split("")
+//     let r = []
+//     for(let i=0;i<arr.length;i++){
+//         if(str(arr,i) == arr[i]){
+//           r.push(true)
+//         }else{
+//             r.push(false)
+//         }
+//     }
+
+//     if(r.includes(false)) return false
+//     return true
+// };
+
+// console.log(digitCount("030"))
+
+
+var rearrangeCharacters = function(s, target) {
+    
 };
 
-console.log(findClosestNumber([-4,-2,1,4,8]))
+
+console.log()
