@@ -215,8 +215,11 @@
 // console.log(canBeTypedWords("leet code","e"))
 
 
-var areOccurrencesEqual = function(s) {
-    
+var getLucky = function(s, k) {
+    let res = s.split('').reduce((acc, el) => acc + (el.charCodeAt(0) - 96), '')
+	for (let i = 0; i < k; i++) {
+		res = res.toString().split('').reduce((acc, el) => acc + Number(el), 0)
+	}
+	return res;
 };
-
-console.log(areOccurrencesEqual("aaabb"));
+console.log(getLucky("leetcode",2))
