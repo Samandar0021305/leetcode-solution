@@ -251,3 +251,19 @@
 // };
 
 // console.log(numOfStrings(["a","b","c"],"aaaaabbbbb"))
+
+var findGCD = function(nums) {
+    let maxNum = Math.max(...nums)
+    let minNum = Math.min(...nums)
+    if(maxNum % minNum === 0) return minNum
+
+    let value =[]
+    for(let i=1;i<maxNum;i++){
+        if(maxNum % i ==0 && minNum % i=== 0){
+          value = i
+        }
+    }
+    return value
+};
+
+console.log(findGCD([9,10]));
