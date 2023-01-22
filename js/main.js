@@ -224,17 +224,30 @@
 // };
 // console.log(getLucky("leetcode",2))
 
-var isPrefixString = function(s, words) {
-    let sum = "";
-    let isValid = false
-    for(let item of words){
-        sum +=item
-        if(s == sum){
-            isValid = !isValid
-        }
-    }
+// var isPrefixString = function(s, words) {
+//     let sum = "";
+//     let isValid = false
+//     for(let item of words){
+//         sum +=item
+//         if(s == sum){
+//             isValid = !isValid
+//         }
+//     }
 
-    return isValid
-};
+//     return isValid
+// };
 
-console.log(isPrefixString("a",["aa","aaaa","banana"]))
+// console.log(isPrefixString("a",["aa","aaaa","banana"]))
+
+
+// var numOfStrings = function(patterns, word) {
+//     let count =0;
+//     for(let item of patterns){
+//         if(word.includes(item)){
+//             count = count + 1
+//         }
+//     }
+//     return count
+// };
+
+// console.log(numOfStrings(["a","b","c"],"aaaaabbbbb"))
