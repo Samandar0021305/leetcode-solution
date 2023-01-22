@@ -267,3 +267,15 @@
 // };
 
 // console.log(findGCD([9,10]));
+
+// var finalValueAfterOperations = function(operations) {
+    
+//     let a = 0;
+//     for(let item of operations){
+//         if(item === "++X" || item === "X++") a = a + 1
+//         if(item === "--X" || item === "X--") a = a - 1
+//     }
+//     return a
+// };
+
+// console.log(finalValueAfterOperations(["++X","++X","X++"]))
