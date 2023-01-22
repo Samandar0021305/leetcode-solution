@@ -312,9 +312,3 @@
 // };
 
 // console.log(areNumbersAscending("sunset is at 7 51 pm overnight lows will be in the low 50 and 60 s"))
-
-var countValidWords = function(sentence) {
-    
-};
-
-console.log(countValidWords());
