@@ -279,3 +279,17 @@
 // };
 
 // console.log(finalValueAfterOperations(["++X","++X","X++"]))
+
+// var countKDifference = function(nums, k) {
+//     let a =0;
+//     for(let i=0;i<nums.length;i++){
+//         for(let j=0;j<nums.length;j++){
+//             if(Math.abs(nums[i] - nums[j]) === k){
+//                 a++
+//             }
+//         }
+//     }
+//     return a/2
+// };
+
+// console.log(countKDifference([1,3],3))
