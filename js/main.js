@@ -293,3 +293,28 @@
 // };
 
 // console.log(countKDifference([1,3],3))
+
+// var areNumbersAscending = function(s) {
+//     let arr = s.split(" ")
+//     let nums = []
+//     for(let i =0;i<arr.length;i++){
+//         if(arr[i] / 1 == arr[i]){
+//              nums.push(arr[i])
+//         }
+//     }
+
+//     for(let i=0;i<nums.length;i++){
+//         if(+nums[i] >= +nums[i+1]) return false
+//     }
+//     let sorted = nums.sort((a,b)=>+a- +b)
+//     return sorted.join("") == nums.join("")
+
+// };
+
+// console.log(areNumbersAscending("sunset is at 7 51 pm overnight lows will be in the low 50 and 60 s"))
+
+var countValidWords = function(sentence) {
+    
+};
+
+console.log(countValidWords());
