@@ -449,3 +449,9 @@
 // console.log(validPalindrome("abc"));
 
 
+// var addBinary = function(a, b) {
+//   let res = Number(parseInt(a,2)) + Number(parseInt(b,2))
+//   return parseInt(a,2)    
+// };
+
+// console.log(addBinary('11','1'))
