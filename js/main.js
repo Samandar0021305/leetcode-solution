@@ -312,3 +312,140 @@
 // };
 
 // console.log(areNumbersAscending("sunset is at 7 51 pm overnight lows will be in the low 50 and 60 s"))
+// var interpret = function(command) {
+// let arr = []
+//     for(let i=0;i<command.length;i++){
+//         if(command[i] == "("  && command[i+1] == ")"){
+//          let temp  = command[i] + command[i+1]
+//           temp = "o"
+//           arr.push(temp)
+//         }else{
+//             arr.push(command[i])
+//         }
+//     }
+    
+//     let str = []
+//     for(let item of arr){
+//         if(item.length === 1 && item.match(/[a-z]/i)){
+//             str = [...str,item]
+//         }
+//     }
+
+//     return str.join("")
+// };
+
+// console.log(interpret("(al)G(al)()()G"));
+
+
+
+// var countConsistentStrings = function(allowed, words) {
+//     let a = 0;
+//     for(let item of words){
+//         let temp = item.split("")
+//         for(let i=0;i<temp.length;i++){
+//             if(!allowed.includes(temp[i])){
+//                 continue
+//             }
+//         }
+
+//     }
+
+//     return a
+// };
+// console.log(countConsistentStrings("cad",["cc","acd","b","ba","bac","bad","ac","d"]));
+
+
+// var countStudents = function(students, sandwiches) {
+//     let a = 0;
+//     for(let i=0;i<students.length;i++){
+//         if(students[i] != sandwiches){
+//             let res = students.shift()
+//             students.push(res)
+//         }else if(students[i] === sandwiches[i]){
+//             a++
+//         }
+//     }
+//     return a
+// };
+
+// console.log(countStudents([1,1,1,0,0,1],[1,0,0,0,1,1]));
+
+
+
+// var MinStack = function() {
+//     this.elements = [];
+// };
+
+// MinStack.prototype.push = function(x) {
+//     this.elements.push({
+//         value: x,
+//         min: this.elements.length === 0 ? x : Math.min(x, this.getMin()),
+//     })
+// };
+
+// MinStack.prototype.pop = function() {
+//    return this.pop()
+// };
+
+
+// MinStack.prototype.top = function() {
+//    return this.elements[this.elements.length - 1].value
+// };
+
+// MinStack.prototype.getMin = function() {
+//    return this.elements[this.elements.length - 1].min
+// };
+
+
+// var validPalindrome = function(s) {
+//      let arr = s.split("")
+//      if(arr.join("") == arr.reverse().join("")) return true
+      
+//      function Palindrome(array,item){
+//        let a = 0
+       
+//        for(let val of array){
+//         if(item == val) {
+//             a++
+//         }
+//        }
+
+//     if(a == 1){
+//         let res = []
+//         for(let val of array){
+//             if(item != val){
+//                 res.push(val)
+//             }
+//         }
+//       return res.join("") == res.reverse().join("")
+
+//     }else if(a > 1){
+//       let b = item 
+//       let results = []
+//       for(let index of array){
+//       if(index != b){
+//         results.push(index)
+//       }
+
+//       if(index == b){
+//         b = null
+//       }
+//    }
+//     return results.join("") == results.reverse().join("")
+
+//     }
+// }
+     
+//      for(let item of arr){
+//         if(Palindrome(arr,item)){
+//             return true
+//         }
+//      }
+  
+//      return false
+// };
+
+
+// console.log(validPalindrome("abc"));
+
+
