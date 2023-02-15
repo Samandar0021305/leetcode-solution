@@ -456,14 +456,15 @@
 
 // console.log(addBinary('11','1'))
 
-var reverseList = function(head) {
-    let pre = null
-     let current = head
-     while(current){
-    let next = current.next
-     current.next = pre
-     pre = current
-     current = next
-     }
-     return pre
-};
+// var reverseList = function(head) {
+//     let pre = null
+//      let current = head
+//      while(current){
+//     let next = current.next
+//      current.next = pre
+//      pre = current
+//      current = next
+//      }
+//      return pre
+// };
+
