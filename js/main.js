@@ -468,3 +468,24 @@
 //      return pre
 // };
 
+
+
+var reverseWords = function(s) {
+    let str = s.split(" ")
+    
+    function reverse(item){
+        let run = []
+        for(let i = item.length - 1;i>=0;i--){
+            run.push(item[i])
+        }
+        return run
+    }
+
+    let res = str.map(val=>{
+        return reverse(val.split("")).join("")
+    })
+
+    return res.join(" ")
+};
+
+console.log(reverseWords("Let's take LeetCode contest"))
