@@ -491,24 +491,52 @@
 // console.log(reverseWords("Let's take LeetCode contest"))
 
 
-var smallerNumbersThanCurrent = function(nums) {
-    function count(val){
-      let a = 0;
-      nums.forEach(index=>{
-        if(val > index){
-            a++
-        }
-      })
-      return a
-    }
+// var smallerNumbersThanCurrent = function(nums) {
+//     function count(val){
+//       let a = 0;
+//       nums.forEach(index=>{
+//         if(val > index){
+//             a++
+//         }
+//       })
+//       return a
+//     }
  
-  let res = []
+//   let res = []
 
-  nums.forEach(val=>{
-    res = [...res,count(val)]
-  })
-  return res
+//   nums.forEach(val=>{
+//     res = [...res,count(val)]
+//   })
+//   return res
 
-};
+// };
 
-console.log(smallerNumbersThanCurrent([8,1,2,2,3]));
+// console.log(smallerNumbersThanCurrent([8,1,2,2,3]));
+
+
+// var findLucky = function(arr) {
+  
+//     function count(item){
+//         let a = 0
+//         arr.forEach(val=>{
+//             if(item === val){
+//                 a++
+//             }
+//         })
+//         return a
+//     }
+     
+//     let res = []
+   
+//     arr.forEach(val=>{
+//         if(count(val) === val){
+//             res = [...res,val]
+//         }
+//     })
+    
+//     if(res.length){
+//         return Math.max(...res)
+//     }
+
+//     return -1
+// };
