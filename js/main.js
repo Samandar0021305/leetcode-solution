@@ -470,22 +470,45 @@
 
 
 
-var reverseWords = function(s) {
-    let str = s.split(" ")
+// var reverseWords = function(s) {
+//     let str = s.split(" ")
     
-    function reverse(item){
-        let run = []
-        for(let i = item.length - 1;i>=0;i--){
-            run.push(item[i])
+//     function reverse(item){
+//         let run = []
+//         for(let i = item.length - 1;i>=0;i--){
+//             run.push(item[i])
+//         }
+//         return run
+//     }
+
+//     let res = str.map(val=>{
+//         return reverse(val.split("")).join("")
+//     })
+
+//     return res.join(" ")
+// };
+
+// console.log(reverseWords("Let's take LeetCode contest"))
+
+
+var smallerNumbersThanCurrent = function(nums) {
+    function count(val){
+      let a = 0;
+      nums.forEach(index=>{
+        if(val > index){
+            a++
         }
-        return run
+      })
+      return a
     }
+ 
+  let res = []
 
-    let res = str.map(val=>{
-        return reverse(val.split("")).join("")
-    })
+  nums.forEach(val=>{
+    res = [...res,count(val)]
+  })
+  return res
 
-    return res.join(" ")
 };
 
-console.log(reverseWords("Let's take LeetCode contest"))
+console.log(smallerNumbersThanCurrent([8,1,2,2,3]));
