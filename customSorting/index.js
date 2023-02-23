@@ -19,4 +19,5 @@ var customSortString = function(order, s) {
     return arr.join("")
 };
 
+
 console.log(customSortString('cba','abcd'))
